@@ -1,0 +1,6 @@
+postgresql
+python3
+    sqlalchemy
+    flask
+    flask-frozen
+
