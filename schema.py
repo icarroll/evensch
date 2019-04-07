@@ -41,5 +41,7 @@ session = mksession()
 
 if __name__ == "__main__":
     import sys
+    if "--drop" in sys.argv:
+        orm_base.metadata.drop_all(engine)
     if "--create" in sys.argv:
         orm_base.metadata.create_all(engine)
